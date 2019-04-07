@@ -50,4 +50,5 @@
     <string name="attacked_no_shield">Vous avez été attaqué par des extraterrestres sans aucun bouclier, jeu terminé!</string>
     <string name="attacked">Vous avez été attaqué par des extraterrestres. Vos boucliers sont endommagés!</string>
     <string name="healed_item">Guéri: %1$s</string>
+    <string name="main_info">Jour actuel: %1$d/%2$d. A trouvé %3$d les pièces. Le score est %4$d</string>
 </resources>

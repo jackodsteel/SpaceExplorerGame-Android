@@ -92,7 +92,7 @@ class MainActivity : Activity() {
     private fun refresh() {
         shipNameTextView.text = env.crew.name
         shipHealthBar.progress = env.crew.ship.shieldHealth
-        currentDayTextView.text = env.currentDay.toString()
+        currentDayTextView.text = getString(R.string.main_info, env.currentDay, env.totalDays, env.partsFound, env.score)
         crewOneFragment.setup(env.crew.crewMembers[0])
         crewTwoFragment.setup(env.crew.crewMembers[1])
     }
@@ -167,6 +167,6 @@ class MainActivity : Activity() {
 fun crewSelectorDialog(context: Context, crew: List<CrewMember>, callback: (CrewMember) -> Unit) {
     AlertDialog.Builder(context)
         .setTitle(context.getString(R.string.select_crew_member))
-        .setItems(crew.map { it.name }.toTypedArray()) { _, pos -> callback(crew[pos]) }
+        .setItems(crew.map { "${it.name} (${it.availableActions})" }.toTypedArray()) { _, pos -> callback(crew[pos]) }
         .show()
 }

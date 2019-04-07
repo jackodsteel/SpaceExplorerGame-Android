@@ -49,4 +49,5 @@
     <string name="attacked_no_shield">You\'ve been attacked by aliens without any shield, game over!</string>
     <string name="attacked">You\'ve been attacked by aliens. Your shields are damaged!</string>
     <string name="healed_item">Healed: %1$s</string>
+    <string name="main_info">Current day: %1$d/%2$d. Found %3$d parts. Score is %4$d</string>
 </resources>
