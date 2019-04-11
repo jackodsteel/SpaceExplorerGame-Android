@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/shipNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ship Name" />
+
+    <TextView
+        android:id="@+id/currentDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CurrentDay" />
+
+    <ProgressBar
+        android:id="@+id/shipHealthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/crewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crew" />
+
+    <fragment
+        android:id="@+id/crewOneFragment"
+        android:name="nz.co.jacksteel.spaceexplorer.fragment.CrewMemeberFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/crewTwoFragment"
+        android:name="nz.co.jacksteel.spaceexplorer.fragment.CrewMemeberFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/storeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/store" />
+
+    <Button
+        android:id="@+id/inventoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory" />
+
+    <Button
+        android:id="@+id/sleepButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sleep" />
+
+    <Button
+        android:id="@+id/searchForPartsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_for_parts" />
+
+    <Button
+        android:id="@+id/repairShipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/repair_ship" />
+
+    <Button
+        android:id="@+id/nextDayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_day" />
+</LinearLayout>
